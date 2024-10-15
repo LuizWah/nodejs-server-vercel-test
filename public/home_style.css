@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: aliceblue;
+    font-style: italic;
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
