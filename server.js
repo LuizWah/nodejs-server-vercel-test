@@ -1,4 +1,4 @@
-require("dotenv").config()
+
 
 const express = require("express");
 const app = express();
@@ -55,13 +55,10 @@ app.post('/notes/:id/delete' , (req,res) =>{
 })
 
 
-
-
-
-
 app.use(express.static("public"));
 
-const port = 8080;
+const port = process.env.PORT;
+console.log(port)
 app.listen(port, ()=>{
     console.log(`LISTENING AT PORT localhost:${port}`);
 })
